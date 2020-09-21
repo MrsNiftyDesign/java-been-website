@@ -1,0 +1,54 @@
+ body {
+      margin: 0;
+      font-family: Goudy-Old-Style-Bold;
+      background-image: url('./images/coffee-beans-399479.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    #logo {
+        width: 300px;
+        padding: 25px;
+        margin: 5px auto;
+      }
+
+    /*Baseline Smart Phone Portrait */
+    @media (min-width: 320px)
+     {
+        div.nav-menu ul li{
+            float: none;
+        }
+
+    }
+
+    /*Baseline Smart Phone Landscape */
+    @media (min-width: 480px)
+     {
+
+
+    }
+
+    /*Baseline Tablet Portrait */
+    @media (min-width: 768px)
+     {
+
+
+    }
+    /*Baseline Tablet Landscape */
+    @media (min-width: 1024px)
+     {
+
+
+    }
+
+    /*Baseline Desktop */
+    @media (min-width: 1200px)
+     {
+
+
+    }
+
+    div {text-align: center;}
+
+    p {text-align: center;}
