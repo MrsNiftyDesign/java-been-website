@@ -1,38 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body>
 
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </head>
-  <body style="height:1500px">
-  
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-    <a class="navbar-brand" href="./index.html">Home</a>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="./menu.html">Menu</a>
-      </li>
-     <li class="nav-item">
-        <a class="nav-link" href="active">About Us</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="./contact.html">Contact</a>
-      </li> 
-    </ul>
-  </nav>
-  
-  <div class="container-fluid" style="margin-top:80px">
+    <script language="javascript"></script>
+</head>
+
+<style>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {
+            position: relative;
+        }
+
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm nav-bg-custom navbar-dark fixed-top">
+        <a class="navbar-brand" href="./index.html"><img class="img-fluid" src="./Images/java_been_logo.jpg" alt="logo" width=30 height=30 align="center"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="active">About</a>
+                </li>
+                <li class="nav-item"></li>
+                <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="margin-top:60px;">
+        <div id="logo">
+            <a href="./index.html">
+                <img class="img-fluid" src="./Images/java-been-logo-light.jpg" alt="logo" width="150" height="150"
+                    align="center">
+            </a>
+        </div>
+
+        <div style="padding-left:16px">
+  <h2>Company History</h2>
+
+  <p>Founded just under three years ago, Java Been is now a bustling cafe. With its high ceilings and "found space" appeal, the
+cafe has come to host exhibitions, meetings, and local bands. It has become an integral part of the arts revival community
+that has taken root in the old factory mill buildings along the river.</p>
+</div>
+
+<h2>Vision</h2>
+
+<p>The owners take pride in their community, striving to provide a creative space with gourmet coffee, tantalizing baked
+goods, and music to inspire the artist's soul.</p>
+
+        <div class="container-fluid" style="margin-top:15px">
+
+            <div id="container">
+
+                <!-- Footer -->
+                <footer>
+                    <div class="footer">
+                        <span>Java Been Copyright All Rights Reserved 2020</span>
+                    </div>
+                </footer>
+            </div>
 
 </body>
+
 </html>

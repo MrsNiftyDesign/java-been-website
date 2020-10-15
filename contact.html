@@ -1,55 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Contact</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body>
 
+<head>
+    <title>Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </head>
-  <body style="height:1500px">
-  
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-    <a class="navbar-brand" href="./index.html">Home</a>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="./menu.html">Menu</a>
-      </li>
-     <li class="nav-item">
-        <a class="nav-link" href="./about.html">About Us</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="active">Contact</a>
-      </li> 
-    </ul>
-  </nav>
-  
-  <div class="container-fluid" style="margin-top:80px">
+    <script language="javascript"></script>
+</head>
 
-<!--Here is my commented code for my use of javascript to create my form within my website-->
-<form name="contactform" method="post" action="barone.renee@gmail.com">
-    <input size="50 maxlength="10 <input type="text" name="firstname" placeholder="Name*"> <br>
-    </br>
-    
-    <form email="email" method="post" action="barone.renee@gmail.com">
-    <input size="50 maxlength="10 <input type="text" name="email" placeholder="Email*"> <br>
-    </br>
-    
-    <textarea name="message" rows="10" col="50" placeholder="Message*"></textarea> <br>
-    
-    </br>
-    <input type="button" name="myBtn" value="Submit">
-    
+<style>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-    </form>
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
 
+    @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {
+            position: relative;
+        }
+
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm nav-bg-custom navbar-dark fixed-top">
+        <a class="navbar-brand" href="./index.html"><img class="img-fluid" src="./Images/java_been_logo.jpg" alt="logo" width=30 height=30 align="center"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item"></li>
+                <a class="nav-link" href="active">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <div class="container-fluid" style="margin-top:60px;">
+        <div id="logo">
+            <a href="./index.html">
+                <img class="img-fluid" src="./Images/java-been-logo-light.jpg" alt="logo" width="150" height="150"
+                    class=center align="center">
+            </a>
+        </div>
+
+        <div class="container-fluid" style="margin-top:15px">
+        
+           
+</style>
+</head>
+<body>
+
+<h2>Contact Us!</h2>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      
+        <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="*First Name">
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="*Last Name">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="*Email">
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+            <!--Here is my commented code for my use of javascript to create my form within my website
+            <form name="contactform" method="post" action="barone.renee@gmail.com">
+                <input size="50 maxlength=" 10 <input type="text" name="firstname" placeholder="Name*"> <br>
+                </br>
+
+                <form email="email" method="post" action="barone.renee@gmail.com">
+                    <input size="50 maxlength=" 10 <input type="text" name="email" placeholder="Email*"> <br>
+                    </br>
+
+                    <textarea name="message" rows="10" col="50" placeholder="Message*"></textarea> <br>
+
+                    </br>
+                    <input type="button" name="myBtn" value="Submit" align="right">
+
+
+                </form>-->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img class="img-fluid" src="./images/java-been-contact-info.png" width="250" height="150"
+                                class=center align="center"> 
+                
+                        </div>
+
+                        <div id="container">
+
+                            <!-- Footer -->
+                            <footer>
+                                <div class="footer">
+                                    <span>Java Been Copyright All Rights Reserved 2020</span>
+                                </div>
+                            </footer>
+                        </div>
 </body>
+
 </html>
