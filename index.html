@@ -6,8 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
@@ -51,12 +49,14 @@
             position: absolute;
             right: 0;
             top: 0;
+        }
 </style>
 
 <body>
     <navbar class="bg-custom"></navbar>
     <nav class="navbar navbar-expand-sm nav-bg-custom navbar-dark fixed-top">
-        <a class="navbar-brand" href="active"><img class="img-fluid" src="./Images/java_been_logo.jpg" alt="logo" width=40 height=40 align="center"></a>
+        <a class="navbar-brand" href="active"><img class="img-fluid" src="./Images/java_been_logo.jpg" alt="logo"
+                width=40 height=40 align="center"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -90,7 +90,7 @@
         }
     </script>
 
-    <div class="container-fluid" style="margin-top:60px">
+    <div class="container-fluid" style="margin-top:60px;">
         <div id="logo">
             <a href="./index.html">
                 <img class="img-fluid" src="./Images/java-been-logo-light.jpg" alt="logo" width=150 height=150>
@@ -104,7 +104,7 @@
         </div>
 
         <div class="jumbotron img-fluid">
-            <img class="img-fluid" src="./Images/coffee-beans-text.png" alt="coffee-beans-text" width=75% height=50%>
+            <img class="img-fluid" src="./Images/coffee-beans-text.png" alt="coffee-beans-text" width=75% height=20%>
         </div>
 
         <div class="container">
@@ -246,12 +246,16 @@
                         </div>
 
                         <div id="colorstrip">
+
+                            
                         </div>
 
                         <div class="container-fluid" style="margin-top:50px"></div>
 
                         <div style="padding-left:16px"></div>
                         <h2>Company History</h2>
+
+                        <img src="./Images/coffee_shop.jpg" width="345" height="259">
 
                         <p>Founded just under three years ago, Java Been is now a bustling cafe. With its high
                             ceilings and "found space" appeal, the
@@ -261,6 +265,8 @@
                     </div>
 
                     <h2>Vision</h2>
+
+                    <img src="./Images/coffee_triple.jpg" width="345" height="259">
 
                     <p>The owners take pride in their community, striving to provide a creative space with
                         gourmet coffee, tantalizing baked
@@ -273,42 +279,47 @@
 
                     <div class="container-fluid" style="margin-top:50px"></div>
 
-                    <form name="contactform" method="post" action="barone.renee@gmail.com">
-                        <input size="50 maxlength=" 10 <input type="text" name="firstname" placeholder="Name*"> <br>
-                        </br>
+                
 
-                        <form email="email" method="post" action="barone.renee@gmail.com">
-                            <input size="50 maxlength=" 10 <input type="text" name="email" placeholder="Email*"> <br>
-                            </br>
+                    <!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">Contact Us!</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p><span class="glyphicon glyphicon-map-marker"></span> 123 Main Street</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Anytown, USA 12345</p>
+      <p><span class="glyphicon glyphicon-phone"></span> (123) 456-7890</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> contact@java-been.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-                            <textarea name="message" rows="10" col="50" placeholder="Message*"></textarea> <br>
 
-                            </br>
-                            <input type="button" name="myBtn" value="Submit">
+                            <div id="container">
 
-
-                        </form>
-
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <img class="img-fluid" src="./images/java-been-contact-info.png" width="250"
-                                        height="150" class=center align="center">
-
-                                </div>
-
-                                <div id="colorstrip">
-                                </div>
-
-                                <div id="container">
-
-                                    <!-- Footer -->
-                                    <footer>
-                                        <div class="footer">
-                                            <span>Java Been Copyright All Rights Reserved 2020</span>
-                                        </div>
-                                    </footer>
-                                </div>
+                                <!-- Footer -->
+                                <footer>
+                                    <div class="footer">
+                                        <span>Java Been Copyright All Rights Reserved 2020</span>
+                                    </div>
+                                </footer>
+                            </div>
 
 </body>
 

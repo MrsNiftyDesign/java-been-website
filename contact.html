@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Contact</title>
+    <title>Java Been</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -15,6 +15,69 @@
 </head>
 
 <style>
+    * {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #491000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #491000;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
     img {
         display: block;
         margin-left: auto;
@@ -36,23 +99,25 @@
             float: right;
             display: block;
         }
-    }
 
-    @media screen and (max-width: 600px) {
-        .topnav.responsive {
-            position: relative;
-        }
 
-        .topnav.responsive .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
 </style>
 
 <body>
 
     <nav class="navbar navbar-expand-sm nav-bg-custom navbar-dark fixed-top">
-        <a class="navbar-brand" href="./index.html"><img class="img-fluid" src="./Images/java_been_logo.jpg" alt="logo" width=30 height=30 align="center"></a>
+        <a class="navbar-brand" href="./index.html"><img class="img-fluid" src="./Images/java_been_logo.jpg" alt="logo"
+                width=40 height=40 align="center"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -94,91 +159,56 @@
         </div>
 
         <div class="container-fluid" style="margin-top:15px">
-        
-           
-</style>
-</head>
-<body>
 
-<h2>Contact Us!</h2>
 
-<div class="container">
-  <form action="/action_page.php">
-    <div class="row">
-      
-        <div class="col-25">
-        <label for="fname">First Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="*First Name">
-      </div>
-    </div>
-    <div class="row">
-    <div class="col-25">
-        <label for="lname">Last Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="*Last Name">
-      </div>
-    </div>
+            </style>
+            </head>
+
+
+
     
-    <div class="row">
-      <div class="col-25">
-        <label for="email">Email</label>
+
+            <!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">Contact Us!</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p><span class="glyphicon glyphicon-map-marker"></span> 123 Main Street</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Anytown, USA 12345</p>
+      <p><span class="glyphicon glyphicon-phone"></span> (123) 456-7890</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> contact@java-been.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
       </div>
-      <div class="col-75">
-        <input type="text" id="email" name="email" placeholder="*Email">
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+          
+        </div>
       </div>
     </div>
-   
-    <div class="row">
-      <div class="col-25">
-        <label for="subject">Subject</label>
-      </div>
-      <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
-      </div>
-    </div>
-    <div class="row">
-      <input type="submit" value="Submit">
-    </div>
-  </form>
+  </div>
 </div>
 
-            <!--Here is my commented code for my use of javascript to create my form within my website
-            <form name="contactform" method="post" action="barone.renee@gmail.com">
-                <input size="50 maxlength=" 10 <input type="text" name="firstname" placeholder="Name*"> <br>
-                </br>
-
-                <form email="email" method="post" action="barone.renee@gmail.com">
-                    <input size="50 maxlength=" 10 <input type="text" name="email" placeholder="Email*"> <br>
-                    </br>
-
-                    <textarea name="message" rows="10" col="50" placeholder="Message*"></textarea> <br>
-
-                    </br>
-                    <input type="button" name="myBtn" value="Submit" align="right">
 
 
-                </form>-->
+                    <div id="container">
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img class="img-fluid" src="./images/java-been-contact-info.png" width="250" height="150"
-                                class=center align="center"> 
-                
-                        </div>
-
-                        <div id="container">
-
-                            <!-- Footer -->
-                            <footer>
-                                <div class="footer">
-                                    <span>Java Been Copyright All Rights Reserved 2020</span>
-                                </div>
-                            </footer>
-                        </div>
+                        <!-- Footer -->
+                        <footer>
+                            <div class="footer">
+                                <span>Java Been Copyright All Rights Reserved 2020</span>
+                            </div>
+                        </footer>
+                    </div>
 </body>
 
 </html>
